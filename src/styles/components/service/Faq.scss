@@ -1,0 +1,16 @@
+.faq {
+  margin: 0 auto;
+  // border-bottom: 1px solid #c7c7c7;
+
+  width: 100%;
+
+  @include responsive(T) {
+    // 768 ~ 1200
+    width: 100%;
+  }
+
+  @include responsive(M) {
+    // 576~768 이하일 때
+    width: 100%;
+  }
+}
