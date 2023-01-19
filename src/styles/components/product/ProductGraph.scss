@@ -1,35 +1,34 @@
 .ProductGraph__hihi {
-    width: 800px;
-    height: 500px;
-    &container {
-        width: 100%;
-        height: 100%;
-    }
-}
+  width: 800px;
+  height: 500px;
 
+  &container {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 // 반응형 576~1199px
 @include responsive(T) {
-    .ProductGraph__hihi {
-        width: 600px;
-        &container {
-            width: 100%;
-            height: 100%;
-        }
+  .ProductGraph__hihi {
+    width: 600px;
+    &container {
+      width: 100%;
+      height: 100%;
     }
+  }
 }
 
-  // 반응형 1~575px 이하일때d
+// 반응형 1~575px 이하일때d
 @include responsive(M) {
-    .ProductGraph__hihi {
-        width: 370px;
-        &container {
-            width: 100%;
-            height: 100%;
-        }
+  .ProductGraph__hihi {
+    width: 370px;
+    &container {
+      width: 100%;
+      height: 100%;
     }
+  }
 }
-
 
 //   // 반응형 375px 아이폰se
 //   // 브라우저 사이즈 375px 이하일때

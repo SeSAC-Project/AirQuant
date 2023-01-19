@@ -56,9 +56,9 @@
 
 @include responsive(M) {
   .ProductBackground {
+    background-image: none;
+    background-color: rgba($blue-main, 0.8);
     &_box {
-      background-color: rgba(0, 115, 255, 0.732);
-
       &_text {
         font-size: 17.5px;
 

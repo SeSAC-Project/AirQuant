@@ -26,6 +26,8 @@ export { ProductYoutubeFirst } from './product/ProductYoutubeFirst';
 export { ProductYoutubeSecond } from './product/ProductYoutubeSecond';
 export { InformationBox } from './product/InformationBox';
 export { ProductSpeechBubble } from './product/ProductSpeechBubble';
+export { ProductBackground } from './product/ProductBackground';
+export { ProductImgBottom } from './product/ProductImgBottom';
 
 // tech
 export { TechConvenience } from './tech/TechConvenience';
