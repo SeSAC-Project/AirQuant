@@ -10,7 +10,7 @@ const center = {
 const Contact = () => {
   const { isLoaded } = useJsApiLoader({
     id: 'airquant-374805',
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
+    googleMapsApiKey: 'AIzaSyARPGXzLqUCHAjdKZtGvuYIeQkzxYWr5MU',
     version: '3.50',
   });
   return isLoaded ? (
