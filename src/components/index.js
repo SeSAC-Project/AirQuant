@@ -44,6 +44,7 @@ export { TechCardBook } from './tech/TechCardBook';
 export { TechCardFirst } from './tech/TechCardFirst';
 export { TechCardSecond } from './tech/TechCardSecond';
 export { TechCardThird } from './tech/TechCardThird';
+export { TechBackGround } from './tech/TechBackGround';
 
 // company
 export { CompanyTech } from './company/CompanyTech';

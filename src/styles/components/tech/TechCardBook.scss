@@ -5,23 +5,25 @@
 
   width: 100%;
 
-  padding: 120px 0px 120px 0;
+  padding: 200px 0;
 
   &container {
     &__section1,
     &__section2 {
+      margin: 0;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      gap: 10px;
     }
 
     &__section1 {
+      margin-bottom: 10px;
       &__text {
-        font-size: 35px;
+        font-size: 27px;
         width: 470px;
         height: 300px;
-        margin: 10px;
         line-height: 1.4;
         font-weight: 600;
 
@@ -36,7 +38,6 @@
   }
 }
 
-
 // 반응형
 // 1199px까지 적용
 @include responsive(T) {
@@ -44,21 +45,16 @@
     &container {
       &__section1 {
         &__text {
-          width: 370px;
+          width: 100%;
         }
       }
     }
   }
 }
 
-
 // 브라우저 사이즈 768px 이하일때
 @media (max-width: 830px) {
   .TechCardBook__ {
-    // margin-top: 300px;
-    // margin-bottom: 500px;
-    margin: 300px 0 500px 0;
-    // background-color: red;
     &container {
       &__section1,
       &__section2 {
@@ -74,29 +70,34 @@
   }
 }
 
-
 // 반응형 2
 // 575px까지 적용
 @include responsive(M) {
-.TechCardBook__ {
-  margin: 100px 0 0 0;
-  &container {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    
-    &__seciont1,
-    &__seciont2,
-    &__seciont3 {
-      width: 100%;
-      margin: 0;
-    }
+  .TechCardBook__ {
+    padding: 150px 20px;
 
-    &__section1 {
-      &__text {
-        margin: 200px 0 15px 0;
+    &container {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+
+      &__seciont1,
+      &__seciont2,
+      &__seciont3 {
+        width: 100%;
+        margin: 0;
+      }
+
+      &__section1 {
+        margin-bottom: 20px;
+        &__text {
+          margin-bottom: 20px;
+        }
+      }
+
+      &__section2 {
+        gap: 20px;
       }
     }
   }
-}
 }
