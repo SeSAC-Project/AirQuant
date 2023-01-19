@@ -1,14 +1,14 @@
+// TechExplanation
+// TechMiddleTitle 삭제 예정
 import {
   TechCardBook,
   TechConTitle,
   TechCustomers,
-  TechExplanation,
   TechMain,
   TechMeasurementTable,
-  TechMiddleTitle,
   TechPatent,
+  TechBackGround,
 } from 'components';
-import { TechBackGround } from 'components/tech/TechBackGround';
 import React from 'react';
 
 const Tech = () => {
@@ -16,9 +16,7 @@ const Tech = () => {
     <div>
       <TechMain />
       <TechMeasurementTable />
-      {/* <TechMiddleTitle /> */}
       <TechCardBook />
-      {/* <TechExplanation /> */}
       <TechBackGround />
       <TechConTitle />
       <TechCustomers />

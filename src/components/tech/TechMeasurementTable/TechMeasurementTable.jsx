@@ -5,12 +5,12 @@ import 'aos/dist/aos.css';
 
 const TechMeasurementTable = () => {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 750 });
   });
   return (
     <>
       <div className="TechMeasurementTable">
-        <p className="TechMeasurementTable_Contents" data-aos="fade-up">
+        <p className="TechMeasurementTable_Contents">
           <div className="TechMeasurementTable_Contents_small">CHECK</div>
           <span className="TechMeasurementTable_Contents_br">
             에어퀀트가 측정하는{' '}

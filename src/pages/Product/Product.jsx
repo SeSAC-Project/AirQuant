@@ -1,31 +1,30 @@
+// ProductYoutubeFirst,
+// ProductYoutubeSecond,
+// ProductYoutubeFirst,
+// ProductYoutubeSecond, 삭제 예정
+
 import React from 'react';
 import {
   ProductBlueBox,
   ProductGraphText,
   ProductMainImg,
   ProductAirTable,
-  ProductPiquantExplanation,
-  ProductAirquantImg,
   InformationBox,
-  ProductYoutubeFirst,
-  ProductYoutubeSecond,
   ProductSpeechBubble,
+  ProductBackground,
+  ProductImgBottom,
 } from 'components';
-import { ProductBackground } from 'components/product/ProductBackground';
-import { ProductImgBottom } from 'components/product/ProductImgBottom';
 
 const Product = () => {
   return (
     <div>
       <ProductMainImg />
-      {/* <ProductPiquantExplanation /> */}
       <InformationBox />
       <ProductBackground />
       <ProductGraphText />
       <ProductBlueBox />
       <ProductAirTable />
       <ProductSpeechBubble />
-      {/* <ProductAirquantImg /> */}
       <ProductImgBottom />
     </div>
   );

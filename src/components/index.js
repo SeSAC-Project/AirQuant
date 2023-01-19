@@ -26,6 +26,8 @@ export { ProductYoutubeFirst } from './product/ProductYoutubeFirst';
 export { ProductYoutubeSecond } from './product/ProductYoutubeSecond';
 export { InformationBox } from './product/InformationBox';
 export { ProductSpeechBubble } from './product/ProductSpeechBubble';
+export { ProductBackground } from './product/ProductBackground';
+export { ProductImgBottom } from './product/ProductImgBottom';
 
 // tech
 export { TechConvenience } from './tech/TechConvenience';
@@ -42,6 +44,7 @@ export { TechCardBook } from './tech/TechCardBook';
 export { TechCardFirst } from './tech/TechCardFirst';
 export { TechCardSecond } from './tech/TechCardSecond';
 export { TechCardThird } from './tech/TechCardThird';
+export { TechBackGround } from './tech/TechBackGround';
 
 // company
 export { CompanyTech } from './company/CompanyTech';

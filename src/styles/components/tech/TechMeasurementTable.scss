@@ -4,10 +4,10 @@
   align-items: center;
   // height: 120vh;
   width: 100%;
-  padding-bottom: 120px;
+  padding: 200px 0;
+  background: rgba($blue-bright, 0.8);
 
   &_Contents {
-    margin: 15% 0 3% 0;
     font-size: 2.5rem;
     font-weight: 600;
     padding-bottom: 5vh;
@@ -16,7 +16,7 @@
       font-size: 14px;
       text-align: center;
       color: $blue_main;
-      padding-bottom: 22px;
+      margin-bottom: 20px;
       font-weight: 700;
     }
   }
@@ -34,6 +34,7 @@
       border-collapse: collapse;
       border-bottom: 2px solid $blue_middle;
       table-layout: fixed;
+      background-color: white;
 
       .TechMeasurementTable_Thead__tr {
         height: 50px;
@@ -58,6 +59,7 @@
       text-align: center;
       word-break: keep-all;
       line-height: 1.4;
+      color: $teritiary;
     }
   }
 
@@ -72,7 +74,7 @@
       width: 800px;
       height: 150px;
 
-      background-color: rgb(249, 249, 249);
+      background: #f9f9f9;
       border-radius: 15px;
       display: flex;
       align-items: center;
@@ -85,6 +87,7 @@
       &_section2,
       &_section3 {
         line-height: 25px;
+        color: $secondary;
       }
     }
   }
@@ -93,8 +96,14 @@
 // 반응형 1
 @include responsive(T) {
   .TechMeasurementTable {
+    padding: 200px 0;
     &_Contents {
       font-size: 2rem;
+
+      &_small {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
     }
     .TechMTbr {
       display: block;
@@ -143,8 +152,9 @@
 // 반응형 2
 @include responsive(M) {
   .TechMeasurementTable {
+    padding: 150px 0;
     &_Contents {
-      font-size: 30px;
+      font-size: 24px;
       text-align: center;
       line-height: 1.5;
       &_br {

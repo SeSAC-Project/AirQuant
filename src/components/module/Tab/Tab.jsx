@@ -8,7 +8,7 @@ const Tab = ({ children, start = 0 }) => {
   const tabMenuData = [
     {
       idx: 0,
-      title: '자주 묻는 질문',
+      title: '자주\n 묻는 질문',
       content: <Faq />,
       navigate: '/service/faq',
     },
