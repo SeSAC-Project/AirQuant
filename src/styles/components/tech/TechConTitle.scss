@@ -1,8 +1,11 @@
+.TechConTitle_container {
+  padding: 300px 0;
+}
+
 .TechConTitle {
   font-size: 40px;
   text-align: center;
   font-weight: 700;
-  padding-top: 30vh;
   line-height: 1.5;
 
   &_title {
@@ -36,6 +39,10 @@
 
 // 반응형
 @include responsive(T) {
+  .TechConTitle_container {
+    padding: 200px 0;
+  }
+
   .TechConTitle {
     font-size: 35px;
 
@@ -50,6 +57,10 @@
 
 // 반응형 모바일
 @include responsive(M) {
+  .TechConTitle_container {
+    padding: 150px 0;
+  }
+
   .TechConTitle {
     font-size: 30px;
     .TechConbr {

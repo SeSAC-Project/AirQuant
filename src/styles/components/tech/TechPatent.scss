@@ -36,24 +36,29 @@ SwiperSlideContainer {
     margin-top: -75px;
     z-index: 0;
   }
+
   .swiper-button-next {
     margin-right: 11%;
     margin-top: -75px;
     z-index: 0;
   }
-  .swiper-button-prev::after {
-    color: $border;
-  }
+
+  .swiper-button-prev::after,
   .swiper-button-next::after {
+    font-size: 28px;
+    font-weight: 700;
     color: $border;
   }
+
   .swiper-pagination-bullet-active {
     background-color: $blue_main;
   }
+
   .swiper .swiper-pagination {
     position: absolute;
     top: 300px;
   }
+
   @include responsive(T) {
     .swiper-button-prev {
       margin-left: 9%;
