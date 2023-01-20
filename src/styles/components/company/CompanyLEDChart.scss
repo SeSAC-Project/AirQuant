@@ -14,10 +14,10 @@
 
   @include responsive(M) {
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
     &-left,
     &-right {
-      width: 80vw;
+      width: 90vw;
       height: 200px;
     }
   }

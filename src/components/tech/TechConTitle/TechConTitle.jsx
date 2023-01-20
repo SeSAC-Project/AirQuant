@@ -12,8 +12,7 @@ import {
   Tech_background_01,
 } from 'images';
 
-import { TechConvenience } from '../TechConvenience';
-
+import { TechConvenience } from 'components';
 const TechConTitle = () => {
   const TechConList = [
     {
@@ -51,7 +50,7 @@ const TechConTitle = () => {
   ];
 
   return (
-    <>
+    <div className="TechConTitle_container">
       <div className="TechConTitle">
         <div className="TechConTitle_title">
           <div className="TechConTitle_title_small">WHY AIRQUANT</div>
@@ -65,7 +64,6 @@ const TechConTitle = () => {
           />
         </div>
       </div>
-
       {TechConList.map((tech, idx) => (
         <TechConvenience
           key={tech.id}
@@ -77,7 +75,7 @@ const TechConTitle = () => {
           idx={idx}
         />
       ))}
-    </>
+    </div>
   );
 };
 

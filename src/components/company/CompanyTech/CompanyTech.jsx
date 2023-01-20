@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 const CompanyTech = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 750 });
   }, []);
 
   return (

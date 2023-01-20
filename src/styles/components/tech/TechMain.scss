@@ -29,6 +29,9 @@
 // 반응형
 @include responsive(T) {
   .TechMain__Main {
+    .TechMain__Main__Image {
+      height: 100vh;
+    }
     .TechMain__title {
       font-size: 3rem;
     }

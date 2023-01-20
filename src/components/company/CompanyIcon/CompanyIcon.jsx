@@ -12,7 +12,8 @@ const CompanyIcon = () => {
   return (
     <div className="CompanyIcon">
       <div className="CompanyIcon-title">
-        파이퀀트는 하마쯔사의 소형 분광기 모듈을 사용합니다
+        파이퀀트는 하마쯔사의
+        <br className="sm-only" /> 소형 분광기 모듈을 사용합니다
         <br />
         &#40;C12666MA&#41;
       </div>

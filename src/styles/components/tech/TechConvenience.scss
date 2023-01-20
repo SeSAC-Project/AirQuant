@@ -2,6 +2,10 @@
   align-items: center;
   padding: 75px 0;
 
+  &:last-child {
+    padding-bottom: 0;
+  }
+
   &.reverse {
     .TechConvenience_title {
       // color: $blue-main;

@@ -18,13 +18,14 @@
     .TechCustomers__title {
       font-size: 45px;
       font-weight: 700;
-      padding-bottom: 30px;
+      margin-bottom: 30px;
+
       &_small {
         font-size: 14px;
         text-align: center;
         color: $blue_main;
         font-weight: 650;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
       }
     }
 
@@ -47,6 +48,19 @@
 @include responsive(M) {
   .TechCustomers__ {
     .TechCustomers__container {
+      .TechCustomers__title {
+        font-size: 34px;
+        margin-bottom: 15px;
+
+        &_small {
+          font-size: 11px;
+          text-align: center;
+          color: $blue_main;
+          font-weight: 650;
+          margin-bottom: 10px;
+        }
+      }
+
       .TechCustomers__map {
         padding-left: 10px;
         padding-right: 10px;
