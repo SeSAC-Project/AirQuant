@@ -94,7 +94,7 @@ const Header = () => {
                 locationNow.pathname.includes('service') ? 'active' : undefined
               }`}
             >
-              <Link to={'./service'}>고객문의</Link>
+              <Link to={'./service'}>고객지원</Link>
             </li>
           </ol>
         </div>

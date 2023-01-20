@@ -1,7 +1,7 @@
 .ProductBackground {
   background-image: url('../../../images/Product/Product_background_03.jpg');
   background-position: center;
-  background-position: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -38,6 +38,9 @@
 // 반응형
 @include responsive(T) {
   .ProductBackground {
+    background-size: auto 100%;
+    background-attachment: unset;
+
     &_box {
       &_text {
         font-size: 25px;

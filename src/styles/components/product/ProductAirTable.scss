@@ -1,4 +1,5 @@
 .AirTable__container {
+  word-break: keep-all;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,6 +86,12 @@
         font-size: 1rem;
       }
 
+      .AirTable__Tbody {
+        tr td {
+          font-size: 12px;
+        }
+      }
+
       .AirTable__hidden {
         display: none;
         visibility: hidden;
@@ -92,12 +99,3 @@
     }
   }
 }
-
-// 반응형 375px 아이폰se
-// 브라우저 사이즈 375px 이하일때
-// @media (max-width: 375px){
-//     .AirTable__hidden {
-//         display: none;
-//         visibility: hidden;
-//     }
-// }

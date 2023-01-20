@@ -57,7 +57,7 @@ const Navbar = (props) => {
             }`}
           >
             <Link to={'./service'} onClick={toggle}>
-              고객문의
+              고객지원
             </Link>
           </li>
         </ol>

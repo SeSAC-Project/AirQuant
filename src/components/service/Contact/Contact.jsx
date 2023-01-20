@@ -52,7 +52,11 @@ const Contact = () => {
       </div>
     </div>
   ) : (
-    <div className="Contact-error">다시 시도하세요</div>
+    <div className="Contact-error">
+      지도를 불러오지 못했습니다.
+      <br />
+      페이지를 새로고침 해주세요.
+    </div>
   );
 };
 
