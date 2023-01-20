@@ -27,7 +27,7 @@ const Tab = ({ children, start = 0 }) => {
   };
 
   return (
-    <Section title={'고객지원'}>
+    <Section title={'고객문의'}>
       <div className="Tab">
         <header className="Tab-header">
           <ol className="menu-list">
