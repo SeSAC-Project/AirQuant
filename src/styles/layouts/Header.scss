@@ -25,6 +25,8 @@
     h1 {
       font-size: 24px;
       line-height: 1.625;
+
+      // text-shadow: 0 0 10px rgba(250, 250, 250, 0.5);
     }
 
     ol {
@@ -65,10 +67,11 @@
   }
   //
   &.blue {
-    background-color: white;
-    // backdrop-filter: blur(50px);
+    background: rgba(white, 0.25);
+    backdrop-filter: blur(50px);
+
     color: $blue-main;
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid rgba($border, 0.5);
     // transform: translate3d(0, 0, 0);
   }
 
