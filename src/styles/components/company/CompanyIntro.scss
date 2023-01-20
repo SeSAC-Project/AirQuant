@@ -1,13 +1,11 @@
 .CompanyIntro {
+  @include column-flexbox(start);
   word-break: keep-all;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  margin-top: 60px;
+  padding: 100px 0;
   height: calc(100vh - 60px);
-  padding-top: 60px;
-  padding-bottom: 100px;
+  gap: 10px;
 
   &-title {
     hr {
@@ -30,13 +28,12 @@
 
   &-Contents {
     @include flexbox(between, end);
-    padding: 100px 0;
+    padding: 60px 0;
     margin: 0 auto;
     gap: 60px;
 
     &-Img {
       width: 500px;
-      height: 350px;
       height: auto;
       border-radius: 10px;
     }
@@ -105,9 +102,8 @@
   }
 
   @include responsive(T) {
-    padding-top: 150px;
-
-    margin-bottom: 400px;
+    height: auto;
+    padding: 100px 0;
 
     &-Contents {
       @include column-flexbox;

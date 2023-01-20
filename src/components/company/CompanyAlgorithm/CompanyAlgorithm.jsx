@@ -21,7 +21,7 @@ const CompanyAlgorithm = () => {
       <div data-aos="fade-up">
         <CompanyAlgoChart />
         <p className="CompanyAlgorithm-Text sm-hidden">
-          파이퀀트의 알고리즘을 적용하면
+          파이퀀트의 알고리즘을 적용하면&nbsp;
           <br className="lg-hidden" />
           하드웨어의 교체 없이 신호대잡음비가 80% 이상 향상할 수 있습니다.
         </p>
