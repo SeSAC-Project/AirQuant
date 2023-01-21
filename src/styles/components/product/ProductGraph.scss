@@ -1,6 +1,8 @@
 .ProductGraph__hihi {
-  width: 800px;
+  width: 95vw;
+  max-width: 800px;
   height: 500px;
+  margin: 0 auto;
 
   &container {
     width: 100%;
@@ -11,7 +13,8 @@
 // 반응형 576~1199px
 @include responsive(T) {
   .ProductGraph__hihi {
-    width: 600px;
+    height: 70vw;
+
     &container {
       width: 100%;
       height: 100%;
@@ -22,11 +25,21 @@
 // 반응형 1~575px 이하일때d
 @include responsive(M) {
   .ProductGraph__hihi {
-    width: 370px;
+    @include flexbox();
     &container {
       width: 100%;
-      height: 100%;
     }
+  }
+
+  .Product__p_text_inhauniv {
+    font-size: 10px;
+  }
+  .recharts-legend-item-text {
+    font-size: 10px;
+  }
+
+  .recharts-wrapper {
+    // height: 300px;
   }
 }
 

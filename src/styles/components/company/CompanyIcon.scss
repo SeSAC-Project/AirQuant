@@ -40,7 +40,7 @@
     padding: 50px 0;
 
     &-item {
-      @include column-flexbox(start, center);
+      @include column-flexbox();
       background-color: $background-banner;
       padding: 40px 24px;
       border-radius: 20px;
@@ -48,6 +48,7 @@
       height: 25vw;
       max-width: 320px;
       max-height: 320px;
+      gap: 20px;
 
       &-img {
         width: 7vw;
@@ -57,7 +58,7 @@
         background-repeat: no-repeat;
         background-position: center;
 
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
 
         &.small-icon {
           background-image: url(../../../images/Company/company_icon_02.png);

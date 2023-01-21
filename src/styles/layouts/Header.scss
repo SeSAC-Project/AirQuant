@@ -65,6 +65,7 @@
       cursor: pointer;
     }
   }
+
   //
   &.blue {
     background: rgba(white, 0.25);
@@ -77,5 +78,15 @@
 
   @include responsive(T) {
     padding: 0 20px;
+  }
+
+  @include responsive(M) {
+    height: 45px;
+
+    .logo {
+      a {
+        font-size: 20px;
+      }
+    }
   }
 }

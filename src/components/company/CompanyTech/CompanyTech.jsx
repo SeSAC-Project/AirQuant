@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 const CompanyTech = () => {
   useEffect(() => {
-    Aos.init({ duration: 750 });
+    Aos.init({ duration: 2000 });
   }, []);
 
   return (
@@ -42,6 +42,8 @@ const CompanyTech = () => {
           className="CompanyTech-Text-Box"
           data-aos="fade-up"
           data-aos-delay="300"
+          data-aos-duration="750"
+          data-aos-easing="ease-in-out"
         >
           <h3 className="CompanyTech-Text-Box-Title">측정 가능 물질 상태</h3>
           <p className="CompanyTech-Text-Box-Content">
@@ -53,6 +55,8 @@ const CompanyTech = () => {
           className="CompanyTech-Text-Box"
           data-aos="fade-up"
           data-aos-delay="600"
+          data-aos-duration="750"
+          data-aos-easing="ease-in-out"
         >
           <h3 className="CompanyTech-Text-Box-Title">검출 한계</h3>
           <p className="CompanyTech-Text-Box-Content">
@@ -65,6 +69,8 @@ const CompanyTech = () => {
           className="CompanyTech-Text-Box"
           data-aos="fade-up"
           data-aos-delay="900"
+          data-aos-duration="750"
+          data-aos-easing="ease-in-out"
         >
           <h3 className="CompanyTech-Text-Box-Title">제품 타입</h3>
           <p className="CompanyTech-Text-Box-Content">

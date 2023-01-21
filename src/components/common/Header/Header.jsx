@@ -2,10 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { VscMenu } from 'react-icons/vsc';
 import { Navbar } from 'components';
+import { keyframes } from 'styled-components';
 
 const Header = () => {
   // const [scrolled, setScrolled] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [deviceWidth, setDeviceWidth] = useState(0);
   const [isOpen, setIsopen] = useState(false);
   const [isMain, setIsMain] = useState(false);
   const _header = useRef(null);
@@ -27,9 +29,23 @@ const Header = () => {
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
   };
+  console.log('스크롤 위치: ', scrollPosition);
+
+  const updateDeviceSize = () => {
+    setDeviceWidth(window.innerWidth || document.documentElement.innerWidth);
+    console.log('디바이스 사이즈: ', deviceWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', updateDeviceSize);
+    return () => {
+      window.removeEventListener('resize', updateDeviceSize);
+    };
+  });
 
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
+
     return () => {
       window.removeEventListener('scroll', updateScroll);
     };
@@ -37,8 +53,12 @@ const Header = () => {
 
   useEffect(() => {
     function headerChange() {
-      if (isMain && scrollPosition > 850) {
-        _header.current.classList.add('blue');
+      if (isMain) {
+        if (deviceWidth < 360 && scrollPosition > 500) {
+          _header.current.classList.add('blue');
+        } else if (scrollPosition > 850) {
+          _header.current.classList.add('blue');
+        } else _header.current.classList.remove('blue');
       } else _header.current.classList.remove('blue');
 
       if (!isMain && scrollPosition > 25) {

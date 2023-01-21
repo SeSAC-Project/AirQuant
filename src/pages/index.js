@@ -1,4 +1,5 @@
 export { Root } from './Root';
+export { NotFound } from './NotFound';
 
 export { Product } from './Product';
 export { Tech } from './Tech';

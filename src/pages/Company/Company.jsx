@@ -5,11 +5,13 @@ import {
   CompanyAlgorithm,
   CompanyTech,
   CompanyIntro,
+  TopButton,
 } from 'components';
 
 const Company = () => {
   return (
     <div className="Company">
+      <TopButton />
       <CompanyIntro />
       <CompanyTech />
       <CompanyIcon />

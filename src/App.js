@@ -10,6 +10,7 @@ import {
   ServiceNotice,
   Tech,
   Root,
+  NotFound,
 } from 'pages';
 import { case_01, case_02, case_03, case_04, case_05, case_06 } from 'images';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -66,7 +67,7 @@ function App() {
     {
       path: '/',
       element: <Root />,
-      errorElement: <div>Page Not Found</div>,
+      errorElement: <NotFound />,
       children: [
         { index: true, element: <Product /> },
         { path: '/tech', element: <Tech /> },

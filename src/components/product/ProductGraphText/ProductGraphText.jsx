@@ -3,7 +3,6 @@ import { ProductGraph } from '../ProductGraph';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { ProductYoutubeSecond } from '../ProductYoutubeSecond';
 
 const ProductGraphText = () => {
   useEffect(() => {
