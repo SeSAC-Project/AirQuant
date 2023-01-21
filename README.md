@@ -1,5 +1,84 @@
 # AirQuant
 
+제품소개 및 홍보 웹사이트 제작
+
+### 🧑🏻‍💻 팀원 소개
+
+<table>
+
+  <tr align="center">
+    <td><a href="https://github.com/samseburn">고석영</a></td>
+    <td><a href="https://github.com/HWAYOU">강화영</a></td>
+    <td><a href="https://github.com/seeun111">김세은</a></td>
+    <td><a href="https://github.com/parkeunye">박은예</a></td>
+    <td><a href="https://github.com/YOONJISUYOON">윤지수</a></td>
+    <td><a href="https://github.com/yoonhappy2">정서윤</a></td>
+    <td><a href="https://github.com/JungJaebin">정재빈</a></td>
+  </tr>
+
+  <tr align="center">
+    <td><img src="https://user-images.githubusercontent.com/68809452/213860148-bce1e35e-dac9-4128-8a88-e63485709686.png
+" width="150px"/></td>
+    <td><img src="https://user-images.githubusercontent.com/68809452/213860182-47d63774-01e9-4d71-b567-8caf13074e1b.png"  width="150px"/></td>
+    <td><img src="https://user-images.githubusercontent.com/68809452/213860177-407142be-1084-47d0-8f3e-1b5aba77a56a.png" width="150px"/></td>
+    <td><img src="https://user-images.githubusercontent.com/68809452/213860080-db20f98c-5b99-4be0-9073-ab6656d91fc6.png" width="150px"/></td>
+    <td><img src="https://user-images.githubusercontent.com/68809452/213860137-e3fcbfb9-36a5-4ec4-bb78-0755a4bfc97a.png" width="150px"/></td>
+    <td><img src="https://user-images.githubusercontent.com/68809452/213860180-f4672749-5449-43fa-96f0-7683dfeb6aa7.png" width="150px"/></td>
+    <td><img src="https://user-images.githubusercontent.com/68809452/213860167-a89f26af-1dbe-4e6f-a2ae-27dc4a8d6ce6.png" width="150px"/></td>
+  </tr>
+
+  <tr>
+  <td>
+    <ul>
+      <li>팀장</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>팀원</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>팀원</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>팀원</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>팀원</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>팀원</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>팀원</li>
+    </ul>
+  </td>
+  </tr>
+
+</table>
+
+<br />
+
+### ✨ 핵심 기능
+
+### 개발 기간 & 일정
+
+### 플로우차트
+
+### 페이지별 기능
+
+### 협업 문서
+
 ### **커밋 메세지 형식**
 
 - 필수 작성 : Subject
