@@ -16,9 +16,12 @@ SwiperSlideContainer {
     --swiper-theme-color: $blue_main;
   }
 
-  .swiper-slide > img {
-    width: 230px;
-    height: 300px;
+  .swiper-slide {
+    text-align: center;
+    img {
+      width: 100%;
+      height: 300px;
+    }
   }
 
   .patent {
@@ -33,14 +36,18 @@ SwiperSlideContainer {
   }
   .swiper-button-prev {
     margin-left: 11%;
-    margin-top: -75px;
+    // margin-top: -75px;
     z-index: 0;
+    /// 이 부분 추가,,,,
+    top: 270px;
   }
 
   .swiper-button-next {
     margin-right: 11%;
-    margin-top: -75px;
+    // margin-top: -75px;
     z-index: 0;
+    /// 이 부분 추가,,,,
+    top: 270px;
   }
 
   .swiper-button-prev::after,
@@ -62,30 +69,33 @@ SwiperSlideContainer {
   @include responsive(T) {
     .swiper-button-prev {
       margin-left: 9%;
-      margin-top: -72px;
+      // margin-top: -72px;
     }
     .swiper-button-next {
       margin-right: 9%;
-      margin-top: -72px;
+      // margin-top: -72px;
     }
   }
   @include responsive(M) {
     .patent {
       font-size: 2rem;
     }
-    .patent_container1 {
-      height: 70vh;
-    }
+    // .patent_container1 {
+    //   height: 70vh;
+    // }
     .swiper-button-prev {
       margin-left: 7%;
-      margin-top: -18px;
+      // margin-top: -18px;
     }
     .swiper-button-next {
       margin-right: 7%;
-      margin-top: -18px;
+      // margin-top: -18px;
     }
-    .swiper-slide > img {
-      margin-left: 17px;
+    .swiper-slide {
+      img {
+        // margin-left: 17px;
+        width: 230px;
+      }
     }
   }
 }
