@@ -15,6 +15,9 @@
   @include responsive(T) {
     padding: 0;
   }
+  @include responsive(M) {
+    margin: 45px auto 0;
+  }
 }
 
 // Case

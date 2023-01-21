@@ -9,11 +9,13 @@
 html {
   font-family: $font-main;
   font-size: $font-size-14;
+  word-break: keep-all;
 }
 
 body {
   font-family: $font-main;
   color: $primary;
+  word-break: keep-all;
 }
 
 h1 {

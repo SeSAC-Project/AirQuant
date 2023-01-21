@@ -7,11 +7,11 @@ import { ProductYoutubeFirst } from '../ProductYoutubeFirst';
 
 const InformationBox = () => {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 750 });
   }, []);
   return (
     <div className="InformationBox">
-      <div className="InformationBox_bigTitle" data-aos="fade-up">
+      <div className="InformationBox_bigTitle">
         <div className="InformationBox_bigTitle_small">INDOOR AIR QUALITY</div>
         <span className="InformationBox_bigTitle_br">
           왜 실내 공기질을 정확하게

@@ -13,6 +13,8 @@ import {
   ProductSpeechBubble,
   ProductBackground,
   ProductImgBottom,
+  ProductYoutubeFirst,
+  ProductYoutubeSecond,
 } from 'components';
 
 const Product = () => {
@@ -22,6 +24,20 @@ const Product = () => {
       <InformationBox />
       <ProductBackground />
       <ProductGraphText />
+      <div
+        style={{
+          display: 'flex',
+          padding: '50px 0',
+          width: '100%',
+          margin: '0 auto',
+          maxWidth: '1280px',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <ProductYoutubeFirst />
+        <ProductYoutubeSecond />
+      </div>
       <ProductBlueBox />
       <ProductAirTable />
       <ProductSpeechBubble />

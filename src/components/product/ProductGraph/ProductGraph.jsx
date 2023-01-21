@@ -58,31 +58,31 @@ const data = [
 export default class ProductGraph extends PureComponent {
   render() {
     return (
-      <div className='ProductGraph__hihi'>
-      <div className='ProductGraph__hihicontainer'>
-      <ResponsiveContainer width="100%" height={500}>
-      <LineChart
-        // width={400}
-        // height={300}
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Line type="monotone" dataKey="알레르기비염" stroke="#1b76ff" />
-        <Line type="monotone" dataKey="천식" stroke="#fb2576" />
-        <Line type="monotone" dataKey="아토피피부염" stroke="#3ad900" />
-      </LineChart>
-      </ResponsiveContainer>
-      </div>
+      <div className="ProductGraph__hihi">
+        <div className="ProductGraph__hihicontainer">
+          <ResponsiveContainer width="95%">
+            <LineChart
+              // width={400}
+              // height={300}
+              data={data}
+              margin={{
+                top: 5,
+                right: 30,
+                left: 20,
+                bottom: 5,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Line type="monotone" dataKey="알레르기비염" stroke="#1b76ff" />
+              <Line type="monotone" dataKey="천식" stroke="#fb2576" />
+              <Line type="monotone" dataKey="아토피피부염" stroke="#3ad900" />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     );
   }

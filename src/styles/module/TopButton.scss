@@ -1,6 +1,9 @@
 .topBtn {
   opacity: 0;
+  display: block;
+
   &-active {
+    display: block;
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -16,6 +19,6 @@
     cursor: pointer;
     transition: opacity 0.3s ease-in;
     opacity: 0.8;
-    z-index: 5;
+    z-index: 99;
   }
 }

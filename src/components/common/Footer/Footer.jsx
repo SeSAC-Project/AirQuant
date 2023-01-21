@@ -37,7 +37,7 @@ const Footer = () => {
             <dl>
               <dt>대표전화</dt>
               <dd>
-                <Link to="tel:02-2088-8765">02-2088-8765</Link>
+                <a href="tel:02-2088-8765">02-2088-8765</a>
               </dd>
             </dl>
             <dl>
@@ -52,9 +52,7 @@ const Footer = () => {
             <dl>
               <dt>E-Mail</dt>
               <dd>
-                <Link to="mailto:contact@piquant.asia">
-                  contact@piquant.asia
-                </Link>
+                <a href="mailto:contact@piquant.asia">contact@piquant.asia</a>
               </dd>
             </dl>
           </div>

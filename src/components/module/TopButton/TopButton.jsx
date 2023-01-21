@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { IoIosArrowUp } from 'react-icons/io';
 
 function TopButton() {
   const [ScrollY, setScrollY] = useState(0);
   const [BtnStatus, setBtnStatus] = useState(false); // 버튼 상태
+  const topBtn = useRef();
+  console.log(topBtn.current);
 
   const handleFollow = () => {
     setScrollY(window.scrollY || document.documentElement.scrollTop);
@@ -41,6 +43,7 @@ function TopButton() {
       <button
         className={`topBtn${BtnStatus ? '-active' : ''}`} // 버튼 노출 여부
         onClick={handleTop} // 버튼 클릭시 함수 호출
+        ref={topBtn}
       >
         <IoIosArrowUp />
       </button>

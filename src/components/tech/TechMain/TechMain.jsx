@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 const TechMain = () => {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (
@@ -18,7 +18,7 @@ const TechMain = () => {
         alt=""
       />
 
-      <p className="TechMain__title" data-aos="fade-up">
+      <p className="TechMain__title" data-aos="fade-up" data-aos-offset="-100">
         최고의 기술로 인정받은 에어퀀트
       </p>
     </div>
