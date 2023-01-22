@@ -15,11 +15,13 @@ import {
   ProductImgBottom,
   ProductYoutubeFirst,
   ProductYoutubeSecond,
+  TopButton,
 } from 'components';
 
 const Product = () => {
   return (
     <div>
+      <TopButton />
       <ProductMainImg />
       <InformationBox />
       <ProductBackground />
