@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Section, Faq, Notice, Qna } from 'components';
+import { Section, Faq, Notice, Qna, TopButton } from 'components';
 import { CaseItem } from 'pages';
 import { useNavigate } from 'react-router-dom';
 

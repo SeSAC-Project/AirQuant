@@ -39,15 +39,29 @@ function TopButton() {
   });
 
   return (
-    <div className="wrap">
-      <button
-        className={`topBtn${BtnStatus ? '-active' : ''}`} // 버튼 노출 여부
-        onClick={handleTop} // 버튼 클릭시 함수 호출
-        ref={topBtn}
-      >
-        <IoIosArrowUp />
-      </button>
-    </div>
+    // <div>
+    //   <button
+    //     className={BtnStatus ? 'topBtn active' : 'topBtn'} // 버튼 노출 여부
+    //     onClick={handleTop} // 버튼 클릭시 함수 호출
+    //     ref={topBtn}
+    //   >
+    //     <IoIosArrowUp />
+    //   </button>
+    // </div>
+    <>
+      {BtnStatus && (
+        <div>
+          <button
+            className={BtnStatus ? 'topBtn active' : 'topBtn'} // 버튼 노출 여부
+            type="button"
+            onClick={handleTop} // 버튼 클릭시 함수 호출
+            ref={topBtn}
+          >
+            <IoIosArrowUp />
+          </button>
+        </div>
+      )}
+    </>
   );
 }
 
