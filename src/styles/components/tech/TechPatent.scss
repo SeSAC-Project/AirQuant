@@ -31,13 +31,13 @@
   .swiper-button-prev {
     margin-left: 11%;
     z-index: 0;
-    top: 270px;
+    top: 390px;
   }
 
   .swiper-button-next {
     margin-right: 11%;
     z-index: 0;
-    top: 270px;
+    top: 390px;
   }
 
   .swiper-button-prev::after,
@@ -62,8 +62,8 @@
     height: 600px;
   }
   @include responsive(M) {
-    .patent {
-      font-size: 2rem;
+    .patent-title {
+      font-size: 28px;
     }
     .swiper-button-prev {
       margin-left: 7%;
