@@ -118,7 +118,7 @@ const Qna = () => {
             type="text"
             name="email"
             placeholder="
-            Please enter your email"
+            이메일을 입력해주세요"
             onChange={changeHandler}
             value={data.email}
           />
@@ -140,7 +140,7 @@ const Qna = () => {
             ref={nameRef}
             type="text"
             name="name"
-            placeholder="Please enter your name"
+            placeholder="이름을 입력해주세요"
             onChange={changeHandler}
             value={data.name}
           />
@@ -160,13 +160,13 @@ const Qna = () => {
             ref={titleRef}
             type="text"
             name="title"
-            placeholder="Please enter a title"
+            placeholder="문의사항을 입력해주세요"
             onChange={changeHandler}
             value={data.title}
           />
           {error.title ? (
             data.title.length < 1 ? (
-              <div className="qna-error">제목을 입력해주세요</div>
+              <div className="qna-error">문의사항을 입력해주세요</div>
             ) : (
               <div className="qna-hidden"></div>
             )
@@ -184,7 +184,7 @@ const Qna = () => {
             value={data.help}
             placeholder="선택하세요"
           >
-            <option>== Please choose an option ==</option>
+            <option>문의유형을 선택해주세요</option>
             <option value="Price">1. 가격은 얼마인가요</option>
             <option value="Repair">2. 수리가 필요해요</option>
             <option value="Warranty">3. 보증기간이 궁금해요</option>
@@ -205,7 +205,7 @@ const Qna = () => {
             ref={askRef}
             name="ask"
             placeholder="
-            Please enter a description"
+            설명을 입력해주세요"
             onChange={changeHandler}
             value={data.ask}
           ></textarea>
