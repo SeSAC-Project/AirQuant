@@ -1,15 +1,7 @@
-/* img {
-  width: 80%;
-  height: 80%;
-}
-
-SwiperSlideContainer {
-} */
-
 .patent_container {
   width: 100%;
-  height: 75vh;
   position: relative;
+  padding: 0 0 100px;
 
   .swiper {
     width: 70%;
@@ -20,6 +12,8 @@ SwiperSlideContainer {
     text-align: center;
     img {
       width: 100%;
+      // max-width 값 주어 모바일 세로모드일 때 사진 넓이가 길게 보이지 x
+      max-width: 230px;
       height: 300px;
     }
   }
@@ -36,17 +30,13 @@ SwiperSlideContainer {
   }
   .swiper-button-prev {
     margin-left: 11%;
-    // margin-top: -75px;
     z-index: 0;
-    /// 이 부분 추가,,,,
     top: 270px;
   }
 
   .swiper-button-next {
     margin-right: 11%;
-    // margin-top: -75px;
     z-index: 0;
-    /// 이 부분 추가,,,,
     top: 270px;
   }
 
@@ -61,41 +51,25 @@ SwiperSlideContainer {
     background-color: $blue_main;
   }
 
-  .swiper .swiper-pagination {
-    position: absolute;
-    top: 300px;
-  }
-
   @include responsive(T) {
     .swiper-button-prev {
       margin-left: 9%;
-      // margin-top: -72px;
     }
     .swiper-button-next {
       margin-right: 9%;
-      // margin-top: -72px;
     }
+    // 이 부분 추가하니 모바일 세로모드에서 푸터랑 겹칠일 x
+    height: 600px;
   }
   @include responsive(M) {
     .patent {
       font-size: 2rem;
     }
-    // .patent_container1 {
-    //   height: 70vh;
-    // }
     .swiper-button-prev {
       margin-left: 7%;
-      // margin-top: -18px;
     }
     .swiper-button-next {
       margin-right: 7%;
-      // margin-top: -18px;
-    }
-    .swiper-slide {
-      img {
-        // margin-left: 17px;
-        width: 230px;
-      }
     }
   }
 }
