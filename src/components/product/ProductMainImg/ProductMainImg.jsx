@@ -23,7 +23,11 @@ const ProductMainImg = () => {
           <p className="airQuant_Main_Title" data-aos="fade-up">
             AirQuant
           </p>
-          <p className="airQuant_Sub_Title" data-aos="fade-up">
+          <p
+            className="airQuant_Sub_Title"
+            data-aos="fade-up"
+            data-aos-offset="-100"
+          >
             Integrated Indoor Air Quality Management IoT solution
           </p>
         </div>
