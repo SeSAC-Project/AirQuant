@@ -20,7 +20,7 @@ const TechPatent = () => {
         <div className="patent">에어퀀트 인증 및 특허</div>
         <Swiper
           modules={[Pagination, Navigation, Autoplay]}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           // spaceBetween={50}
           slidesPerView={1}
           breakpoints={{
