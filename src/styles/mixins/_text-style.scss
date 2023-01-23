@@ -1,0 +1,15 @@
+@mixin big-title() {
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 60px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: $black;
+}
+
+@mixin small-title() {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: $blue_main;
+}

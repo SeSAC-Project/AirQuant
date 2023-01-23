@@ -22,6 +22,7 @@ export { ProductGraph } from './product/ProductGraph';
 export { ProductGraphText } from './product/ProductGraphText';
 export { ProductMainImg } from './product/ProductMainImg';
 export { ProductPiquantExplanation } from './product/ProductPiquantExplanation';
+export { ProductYoutube } from './product/ProductYoutube';
 export { ProductYoutubeFirst } from './product/ProductYoutubeFirst';
 export { ProductYoutubeSecond } from './product/ProductYoutubeSecond';
 export { InformationBox } from './product/InformationBox';

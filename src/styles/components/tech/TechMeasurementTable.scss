@@ -8,16 +8,11 @@
   background: rgba($blue-bright, 0.8);
 
   &_Contents {
-    font-size: 2.5rem;
-    font-weight: 600;
-    padding-bottom: 5vh;
+    @include big-title();
+    font-size: 30px;
 
     &_small {
-      font-size: 14px;
-      text-align: center;
-      color: $blue_main;
-      margin-bottom: 20px;
-      font-weight: 700;
+      @include small-title();
     }
   }
 

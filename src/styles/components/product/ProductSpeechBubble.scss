@@ -1,224 +1,212 @@
 .Bubble_ {
-    width: 100%;
+  width: 100%;
+  padding: 200px 0;
 
-    background-color: $blue_main;
+  background-color: $blue_main;
 
-    &container {
-        display: flex;
-        flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
+  &container {
+    @include column-flexbox(center, start);
+    gap: 100px;
 
-        &_section1,
-        &_section2,
-        &_section3 
-        {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+    &_section1,
+    &_section2,
+    &_section3 {
+      @include flexbox();
 
-            width: 70%;
-            max-width: 996px;
-            padding: 40px 40px 40px 40px;
-            margin-bottom: 100px;
+      width: 70%;
+      max-width: 996px;
+      padding: 40px 40px 40px 40px;
 
-            background-color: $white;
-            // box-shadow: 0px 0px 10px rgba(34, 74, 103, 0.25),0px 0px 50px rgba(34, 74, 103, 0.25);
-            box-shadow: 0px 0px 10px rgba(34, 74, 103, 0.25),
-            0px 0px 50px rgba(34, 74, 103, 0.25),
-            0px 0px 70px rgba(34, 74, 103, 0.25);
+      background-color: $white;
+      // box-shadow: 0px 0px 10px rgba(34, 74, 103, 0.25),0px 0px 50px rgba(34, 74, 103, 0.25);
+      box-shadow: 0px 0px 10px rgba(34, 74, 103, 0.25),
+        0px 0px 50px rgba(34, 74, 103, 0.25),
+        0px 0px 70px rgba(34, 74, 103, 0.25);
 
-            &_title_body {
-                font-size: 1.8rem;
-                font-weight: 600;
-                word-break: keep-all;
-                line-height: 1.42;
-                color: $primary;
-                position: relative;
+      &_title_body {
+        font-size: 1.8rem;
+        font-weight: 600;
+        word-break: keep-all;
+        line-height: 1.42;
+        color: $primary;
+        position: relative;
 
-                &_name{
-                    margin-top: 20px;
-                    font-size: 1.25rem;
-                }
-
-                span {
-                    font-family: "Noto Sans KR","Helvetica Neue","Helvetica Neue","Helvetica","Arial", sans-serif;
-                    font-size: 30px;
-                    line-height: 30px;
-                }
-                .quote-left {
-                    position: absolute;
-                    left: -20px;
-                    top: -6px;
-                }
-            }
-
-            &_img {
-                width: 200px;
-                height: 200px;
-
-                border-radius: 50%;
-                margin-right: 50px;
-            }
-
-            &_img2 {
-                width: 200px;
-                height: 200px;
-
-                border-radius: 50%;
-                margin-left: 10px;
-            }
-
+        &_name {
+          margin-top: 20px;
+          font-size: 1.25rem;
         }
 
-        &_section1,
-        &_section3 {
-            border-radius: 4rem 4rem 4rem 0;
-            margin-left: 10%;
+        span {
+          font-family: 'Noto Sans KR', 'Helvetica Neue', 'Helvetica Neue',
+            'Helvetica', 'Arial', sans-serif;
+          font-size: 30px;
+          line-height: 30px;
         }
-
-        &_section2 {
-            display: flex;
-            flex-direction: row-reverse;
-
-            border-radius: 4rem 4rem 0 4rem;
-            margin-left: auto;
-            margin-right: 10%;
-
-            &_title_body {
-                margin-left: 50px;
-            }
+        .quote-left {
+          position: absolute;
+          left: -20px;
+          top: -6px;
         }
+      }
 
-        &_section1 {
-            margin-top: 200px;
-        }
+      &_img {
+        width: 200px;
+        height: 200px;
 
-        &_section3 {
-            margin-bottom: 200px;
-        }
+        border-radius: 50%;
+        margin-right: 50px;
+      }
+
+      &_img2 {
+        width: 200px;
+        height: 200px;
+
+        border-radius: 50%;
+        margin-left: 10px;
+      }
     }
-}
 
+    &_section1,
+    &_section3 {
+      border-radius: 4rem 4rem 4rem 0;
+      margin-left: 10%;
+    }
+
+    &_section2 {
+      display: flex;
+      flex-direction: row-reverse;
+
+      border-radius: 4rem 4rem 0 4rem;
+      margin-left: auto;
+      margin-right: 10%;
+
+      &_title_body {
+        margin-left: 50px;
+      }
+    }
+  }
+}
 
 // 반응형
 // 1199px까지 적용
 @include responsive(T) {
-    .Bubble_ {
-        // background-color: red;
-        &container {
-            &_section1,
-            &_section2,
-            &_section3{
-                width: 80%;
-                box-shadow: 0px 0px 10px rgba(34, 74, 103, 0.25),
-                0px 0px 50px rgba(34, 74, 103, 0.25);
-                
-                &_title_body {
-                    font-size: 1.4rem;
-                    line-height: 1.42;
+  .Bubble_ {
+    // background-color: red;
+    &container {
+      &_section1,
+      &_section2,
+      &_section3 {
+        width: 80%;
+        box-shadow: 0px 0px 10px rgba(34, 74, 103, 0.25),
+          0px 0px 50px rgba(34, 74, 103, 0.25);
 
-                    &_name{
-                        display: inline-block;
-                        margin-top: 20px;
-                        font-size: 1rem;
-                    }
-                }
+        &_title_body {
+          font-size: 1.4rem;
+          line-height: 1.42;
 
-                
-                &_img {
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 12px;
-                    margin: 10px 0 0 0 ;
-                }
-                &_img2 {
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 12px;
-                }
-                
-                span {
-                    display: none;
-                }
-
-            }
-            
-            &_section1,
-            &_section3{
-                padding: 40px 40px 20px 40px;
-                flex-direction: column-reverse;
-                align-items: flex-start;
-            }
-
-            &_section1 {
-                margin-bottom: 60px;
-            }
-            
-            &_section2 {
-                padding: 40px 40px 20px 40px;
-                align-items: flex-end;
-                flex-direction: column-reverse;
-                margin-bottom: 60px;
-                
-                &_title_body{
-                margin-left: 0;
-            }
-            }
-
-            &_section3 {
-                margin-bottom: 200px;
-            }
+          &_name {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1rem;
+          }
         }
-    }
-}
 
+        &_img {
+          width: 40px;
+          height: 40px;
+          border-radius: 12px;
+          margin: 10px 0 0 0;
+        }
+        &_img2 {
+          width: 40px;
+          height: 40px;
+          border-radius: 12px;
+        }
+
+        span {
+          display: none;
+        }
+      }
+
+      &_section1,
+      &_section3 {
+        padding: 40px 40px 20px 40px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+
+      &_section1 {
+        margin-bottom: 60px;
+      }
+
+      &_section2 {
+        padding: 40px 40px 20px 40px;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        margin-bottom: 60px;
+
+        &_title_body {
+          margin-left: 0;
+        }
+      }
+
+      &_section3 {
+        margin-bottom: 200px;
+      }
+    }
+  }
+}
 
 // 반응형 2
 // 575px까지 적용
 @include responsive(M) {
-    .Bubble_ {
-        &container {
-            align-items: center;
-            
-            &_section1,
-            &_section2,
-            &_section3{
-                width: 335px;
-                margin-left: 0;
-                margin-right: 0;
-                flex-direction: column-reverse;
-                
-                &_title_body {
-                    line-height: 1.42;
-                }
-                
-                &_img,
-                &_img2 {
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 12px;
-                    margin: 20px 0 0 0 ;
-                    
-                }
-                
-                span {
-                    display: none;
-                }
-            }
-            
-            &_section1,
-            &_section3{
-                align-items: flex-start;
-            }
+  .Bubble_ {
+    padding: 100px 0;
 
-            &_section2 {
-                align-items: flex-end;
-                
-                &_title_body{
-                margin-left: 0;
-            }
-            }
+    &container {
+      align-items: center;
+      gap: 50px;
+
+      &_section1,
+      &_section2,
+      &_section3 {
+        width: 335px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column-reverse;
+
+        &_title_body {
+          font-size: 18px;
+          line-height: 1.42;
+          margin-bottom: 10px;
         }
+
+        &_img,
+        &_img2 {
+          width: 40px;
+          height: 40px;
+          border-radius: 12px;
+          margin: 0;
+        }
+
+        span {
+          display: none;
+        }
+      }
+
+      &_section1,
+      &_section3 {
+        align-items: flex-start;
+      }
+
+      &_section2 {
+        align-items: flex-end;
+
+        &_title_body {
+          margin-left: 0;
+        }
+      }
     }
+  }
 }

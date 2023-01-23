@@ -82,13 +82,13 @@ const Qna = () => {
     }
 
     // Modal 만들 위치
-    window.alert(
-      `이메일: ${data.email} 
-   이름: ${data.name} 
-   제목: ${data.title} 
-   도움: ${data.help} 
-   문의: ${data.ask}`
-    );
+    window.alert(`
+  이메일: ${data.email} 
+  이름: ${data.name} 
+  문의사항: ${data.title} 
+  문의유형: ${data.help} 
+  설명: ${data.ask}
+   `);
 
     addInfo(data);
 
@@ -155,7 +155,7 @@ const Qna = () => {
           )}
         </div>
         <div className="input-group">
-          <label>제목</label>
+          <label>문의사항</label>
           <input
             ref={titleRef}
             type="text"
@@ -185,9 +185,9 @@ const Qna = () => {
             placeholder="선택하세요"
           >
             <option>문의유형을 선택해주세요</option>
-            <option value="Price">1. 가격은 얼마인가요</option>
-            <option value="Repair">2. 수리가 필요해요</option>
-            <option value="Warranty">3. 보증기간이 궁금해요</option>
+            <option value="가격">1. 가격은 얼마인가요</option>
+            <option value="수리">2. 수리가 필요해요</option>
+            <option value="보증기간">3. 보증기간이 궁금해요</option>
           </select>
           {error.help ? (
             data.help.length < 1 ? (

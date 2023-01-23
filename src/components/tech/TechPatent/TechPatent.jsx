@@ -15,7 +15,9 @@ const TechPatent = () => {
     <div className="patent_container">
       <div className="swiper-button-prev"></div>
       <div className="patent_center">
-        <div className="patent">에어퀀트 인증 및 특허</div>
+        <div className="patent-title">
+          <div className="small-title">PATENT</div>에어퀀트의 인증 및 특허
+        </div>
         <Swiper
           modules={[Navigation, Autoplay]}
           slidesPerView={1}

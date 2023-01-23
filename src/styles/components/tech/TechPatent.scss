@@ -1,7 +1,8 @@
 .patent_container {
   width: 100%;
+
+  padding: 100px 0;
   position: relative;
-  padding: 0 0 100px;
 
   .swiper {
     width: 70%;
@@ -18,12 +19,11 @@
     }
   }
 
-  .patent {
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 80px;
+  .patent-title {
+    @include big-title();
+    .small-title {
+      @include small-title();
+    }
   }
   .patent_center {
     align-items: center;

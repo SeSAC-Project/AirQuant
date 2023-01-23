@@ -1,15 +1,8 @@
 .ProductYoutubeFirst {
   width: 100%;
-  max-width: 900px;
   margin: 30px auto;
-  // margin-top: -70px;
-
-  padding: 40px;
-  box-sizing: border-box;
 
   &_video {
-    text-align: center;
-
     /* 반응형 */
     position: relative;
     width: 100%;

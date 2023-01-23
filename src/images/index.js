@@ -2,6 +2,9 @@
 // src에 변수로 삽입
 // <img src={airquant_01} alt="" />
 
+// Common
+export { default as error } from './common/error.svg';
+
 // Product
 export { default as airquant_01 } from './Product/airquant_01.jpeg';
 export { default as airquant_02 } from './Product/airquant_02.jpeg';

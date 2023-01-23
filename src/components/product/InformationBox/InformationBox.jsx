@@ -7,7 +7,7 @@ import { ProductYoutubeFirst } from '../ProductYoutubeFirst';
 
 const InformationBox = () => {
   useEffect(() => {
-    Aos.init({ duration: 750 });
+    Aos.init({ duration: 1000 });
   }, []);
   return (
     <div className="InformationBox">
@@ -25,7 +25,7 @@ const InformationBox = () => {
       <div
         className="InformationBox_firstBox"
         data-aos="fade-up"
-        data-aos-delay="700"
+        data-aos-delay="100"
       >
         <div className="InformationBox_title">
           건물 외부 대비 심각한 공기 질 오염
@@ -50,7 +50,8 @@ const InformationBox = () => {
       <div
         className="InformationBox_secondBox"
         data-aos="fade-up"
-        data-aos-delay="800"
+        data-aos-delay="200"
+        // data-aos-duration="1000"s
       >
         <div className="InformationBox_title">공기 질 오염의 위험성</div>
         <div className="InformationBox_secondBox_content">

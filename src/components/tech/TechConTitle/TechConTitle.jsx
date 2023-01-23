@@ -54,7 +54,8 @@ const TechConTitle = () => {
       <div className="TechConTitle">
         <div className="TechConTitle_title">
           <div className="TechConTitle_title_small">WHY AIRQUANT</div>
-          <span className="TechConbr">왜 에어퀀트를 </span>선택해야할까요
+          왜 에어퀀트를 <br className="sm-only" />
+          선택해야할까요
         </div>
         <div className="TechConTitle_content">
           <img
