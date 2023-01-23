@@ -16,16 +16,11 @@
     background-color: $blue-white;
 
     .TechCustomers__title {
+      @include big-title();
       font-size: 45px;
-      font-weight: 700;
-      margin-bottom: 30px;
 
       &_small {
-        font-size: 14px;
-        text-align: center;
-        color: $blue_main;
-        font-weight: 650;
-        margin-bottom: 20px;
+        @include small-title();
       }
     }
 

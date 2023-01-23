@@ -1,15 +1,9 @@
 .TechConvenience {
   align-items: center;
-  padding: 75px 0;
+  padding-top: 150px;
 
   &:last-child {
     padding-bottom: 0;
-  }
-
-  &.reverse {
-    .TechConvenience_title {
-      // color: $blue-main;
-    }
   }
 
   // 소제목
@@ -17,7 +11,7 @@
     font-size: 24px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: $secondary;
   }
 
@@ -25,166 +19,35 @@
     @include flexbox();
     column-gap: 30px;
     width: 100%;
+    height: 360px;
     color: $secondary;
-
-    // 왼쪽
-    .TechConBoxLeft {
-      padding: 50px;
-
-      .TechConLeftChild {
-        width: 320px;
-        height: 280px;
-
-        border: 1px solid rgb(221, 221, 221);
-        border-radius: 12px;
-
-        &_gradation {
-          position: relative;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-
-          background: linear-gradient(
-            180deg,
-            hsla(0, 0%, 100%, 0),
-            hsla(0, 0%, 100%, 0.97)
-          );
-
-          &_Img {
-            position: relative;
-            width: 320px;
-            height: 185px;
-            border-top-right-radius: 12px;
-            border-top-left-radius: 12px;
-            z-index: -5;
-          }
-        }
-        &_text {
-          height: 95px;
-          text-align: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          &_content {
-            font-size: 1.1rem;
-            font-weight: 600;
-            white-space: pre-wrap;
-            line-height: 1.5;
-          }
-        }
-      }
-    }
-
-    // 오른쪽
-    .TechConBoxright {
-      // padding: 50px;
-      .TechConRightChild {
-        width: 320px;
-        // height: 280px;
-        border: 1px solid rgb(221, 221, 221);
-        border-radius: 10px;
-
-        &_gradation {
-          position: relative;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-
-          background: linear-gradient(
-            180deg,
-            hsla(0, 0%, 100%, 0),
-            hsla(0, 0%, 100%, 0.97)
-          );
-          &_Img {
-            position: relative;
-            width: 320px;
-            height: 185px;
-            border-top-right-radius: 12px;
-            border-top-left-radius: 12px;
-            z-index: -5;
-          }
-        }
-        &_text {
-          height: 95px;
-          text-align: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          &_content {
-            font-size: 1.1rem;
-            font-weight: 600;
-
-            white-space: pre-wrap;
-            line-height: 1.5;
-          }
-        }
-      }
-    }
   }
-}
 
-// 반응형
-@include responsive(T) {
-  .TechConvenience {
-    padding: 75px 20px;
+  @include responsive(T) {
+    padding: 75px 20px 0;
 
     &_content {
-      flex-direction: column;
+      // flex-direction: column;
       text-align: center;
       align-items: center;
-      // 왼쪽
-      .TechConLeftChild {
-        padding-bottom: 10vh;
-        padding-right: 0px;
-      }
-
-      // 오른쪽
-      .TechConRightChild {
-        padding-left: 0px;
-      }
+      column-gap: 10px;
     }
   }
-}
 
-// 반응형 2
-@include responsive(M) {
-  .TechConvenience {
-    padding: 50px 20px;
+  @include responsive(M) {
+    padding: 50px 20px 0;
 
     &_title {
       white-space: pre-wrap;
       font-size: 20px;
       line-height: 1.5;
     }
+
     &_content {
       flex-direction: column;
       text-align: center;
-
-      // 왼쪽
-      .TechConBoxLeft {
-        padding-left: 0px;
-        padding-right: 0px;
-        .TechConLeftChild {
-          padding-bottom: 10vh;
-          padding-right: 0px;
-          &_text {
-            font-size: 16px;
-          }
-        }
-      }
-      // 오른쪽
-      .TechConBoxright {
-        padding-left: 0px;
-        padding-right: 0px;
-        .TechConRightChild {
-          padding-left: 0px;
-          &_text {
-            font-size: 16px;
-          }
-        }
-      }
+      height: auto;
+      column-gap: 0;
     }
   }
 }

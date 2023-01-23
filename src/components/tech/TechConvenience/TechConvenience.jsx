@@ -13,11 +13,11 @@ const TechConvenience = ({
   idx,
 }) => {
   useEffect(() => {
-    Aos.init({ duration: 1250 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (
-    <div className={`TechConvenience ${idx % 2 === 0 ? 'reverse' : ''}`}>
+    <div className={`TechConvenience`}>
       <div className="TechConvenience_title">{title}</div>
       <div className={`TechConvenience_content`}>
         <div data-aos="fade-up" data-aos-offset="-25">
