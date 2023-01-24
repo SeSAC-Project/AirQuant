@@ -189,7 +189,7 @@
 
 [https://docs.aws.amazon.com/ko_kr/amplify/latest/userguide/environment-variables.html](https://docs.aws.amazon.com/ko_kr/amplify/latest/userguide/environment-variables.html)
 
-## `2. 깃허브 관리`
+## 2. 깃허브 관리
 
 ### **`상황`**
 
@@ -218,26 +218,43 @@ Fix(Dropdown): 드롭다운 열림 중복 현상 수정
 2. git pull & push 시 충돌을 방지하기 위해 작업하는 파일 및 상황 공유
 3. pull 하고, 라이브러리 추가가 있을 경우를 위해 npm start 전 npm install 필수
 
-- **문제** : git pull로 병합사항이 생겨 병합을 했는데 commit 하지 않고 pull request 함
-- **해결**
-  1. pr 받을 때 review 체크 시 수정사항이 있는 파일은 체크 하지 않고, request changes 선택 (이때 comment에 사유를 입력)
-  2. vs code에서 marge 후 commit 하고 `$ git push -f origin 브랜치이름` 입력 시 기존 pr에 추가됨.
+### **`문제`**
 
-## `3. 깃허브 pull 충돌 오류`
+git pull로 병합사항이 생겨 병합을 했는데 commit 하지 않고 pull request 함
 
-- **상황** :
-  ```
-  error : The following untracked working tree files would be overwritten by merge: Please move or remove them before you merge
-  ```
-- **원인** : untracked 되는 파일이 있다는 의미
-  git이 관리해주고 있지 않은 상태이므로 tracked 상태가 되도록 변경 필요
-- **해결** : 아래의 명령어 순서대로 입력해주기
-  git add -A
-  git stash // 현재 상태를 임시 저장
-  git pull
-- **참고** : [[git pull 에러]please move or remove them before you merge](https://carpet-part1.tistory.com/330)
+### **`해결`**
 
-## `4. 리액트 애니메이션 적용`
+1. pr 받을 때 review 체크 시 수정사항이 있는 파일은 체크 하지 않고, request changes 선택 (이때 comment에 사유를 입력)
+2. vs code에서 marge 후 commit 하고 `$ git push -f origin 브랜치이름` 입력 시 기존 pr에 추가됨.
+
+## 3. 깃허브 pull 충돌 오류
+
+### **`상황`**
+
+```
+error : The following untracked working tree files would be overwritten by merge: Please move or remove them before you merge
+```
+
+### **`원인`**
+
+- untracked 되는 파일이 있다는 의미
+- git이 관리해주고 있지 않은 상태이므로 tracked 상태가 되도록 변경 필요
+
+### **`해결`**
+
+아래의 명령어 순서대로 입력해주기
+
+```
+git add -A
+git stash // 현재 상태를 임시 저장
+git pull
+```
+
+### **`참고`**
+
+[[git pull 에러]please move or remove them before you merge](https://carpet-part1.tistory.com/330)
+
+## 4. 리액트 애니메이션 적용
 
 ### **`상황`**
 
