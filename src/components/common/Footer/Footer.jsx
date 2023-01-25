@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { instargram, facebook, blog } from 'images';
+import { instargram, facebook, blog, logo } from 'images';
 
 const Footer = () => {
   const piQuantURL = 'http://www.piquant.asia';
   return (
     <footer className="footer">
       <div className="footer-top">
-        <h1 className="logo">PiQuant</h1>
+        {/* <h1 className="logo">PiQuant</h1> */}
+        <div className="footer-logo">
+          <img src={logo} alt="파이퀀트 로고" />
+        </div>
         <div className="icon-group">
           <a href="https://blog.naver.com/piquant_asia" target="_blank">
             <img src={blog} alt="파이퀀트 블로그로 이동" />

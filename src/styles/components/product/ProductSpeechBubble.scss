@@ -91,8 +91,9 @@
 // 1199px까지 적용
 @include responsive(T) {
   .Bubble_ {
-    // background-color: red;
+    padding: 150px 0;
     &container {
+      gap: 75px;
       &_section1,
       &_section2,
       &_section3 {
@@ -136,14 +137,14 @@
       }
 
       &_section1 {
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
       }
 
       &_section2 {
         padding: 40px 40px 20px 40px;
         align-items: flex-end;
         flex-direction: column-reverse;
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
 
         &_title_body {
           margin-left: 0;
@@ -151,7 +152,7 @@
       }
 
       &_section3 {
-        margin-bottom: 200px;
+        // margin-bottom: 200px;
       }
     }
   }
