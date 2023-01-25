@@ -1,5 +1,5 @@
 import React from 'react';
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, MarkerF } from '@react-google-maps/api';
 import { FaBus, FaSubway } from 'react-icons/fa';
 
 const center = {
@@ -15,11 +15,9 @@ const Contact = () => {
   });
   return isLoaded ? (
     <div className="Contact sm-hidden">
-      <GoogleMap
-        center={center}
-        zoom={20}
-        mapContainerClassName="Contact-map"
-      ></GoogleMap>
+      <GoogleMap center={center} zoom={20} mapContainerClassName="Contact-map">
+        <MarkerF position={center} />
+      </GoogleMap>
       <div className="Contact-info">
         <div className="Contact-address">
           <h3 className="info-title">오시는길</h3>
