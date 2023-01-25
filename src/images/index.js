@@ -87,6 +87,7 @@ export { default as case_05 } from './Case/case_05.webp';
 export { default as case_06 } from './Case/case_06.jpg';
 
 // Footer (icon)
+export { default as logo } from './Footer/logo.png';
 export { default as instargram } from './Footer/instargram.png';
 export { default as facebook } from './Footer/facebook.png';
 export { default as blog } from './Footer/blog.png';
