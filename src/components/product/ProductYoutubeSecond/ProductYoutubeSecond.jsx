@@ -10,7 +10,7 @@ const ProductYoutubeSecond = () => {
           height="100%"
           src="https://www.youtube.com/embed/9jx92FdlYOs"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
