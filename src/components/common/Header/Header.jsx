@@ -29,11 +29,9 @@ const Header = () => {
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
   };
-  console.log('스크롤 위치: ', scrollPosition);
 
   const updateDeviceSize = () => {
     setDeviceWidth(window.innerWidth || document.documentElement.innerWidth);
-    console.log('디바이스 사이즈: ', deviceWidth);
   };
 
   useEffect(() => {

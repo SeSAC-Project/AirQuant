@@ -4,8 +4,6 @@ import { TfiClose } from 'react-icons/tfi';
 
 const Navbar = (props) => {
   const { open, toggle, pathname } = props;
-  console.log(pathname);
-  console.log(pathname.includes('/service'));
   return (
     <aside className={`navbar lg-hidden ${open ? 'is-active' : ''}`}>
       <header className="navbar-header">
